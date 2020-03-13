@@ -1,0 +1,9 @@
+Name: auto_format
+Description: format the current R file.
+Binding: auto_format
+Interactive: false
+
+Name: citenow
+Description: cite a reference for zotero.
+Binding: citenow
+Interactive: true

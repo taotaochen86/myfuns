@@ -1,0 +1,17 @@
+Package: Taotao
+Type: Package
+Title: R toolkit
+Version: 0.3.3
+Author: person("Taotao","Chen",email="taotao-chen@syau.edu.cn",role="Author")
+Maintainer: The package maintainer <taotao-chen@syau.edu.cn>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?B
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Imports: 
+  tidyverse(>= 1.2.1),
+  rstudioapi(>= 0.8),
+  formatR(>= 1.5),
+  future
