@@ -1,0 +1,396 @@
+remove.packages("Taotao", lib="~/R/win-library/3.5")
+install.packages("formatR")
+library(Taotao)
+Taotao::auto_format()
+library(Taotao)
+Taotao::auto_format()
+Taotao::auto_format()
+library(Taotao)
+Taotao::auto_format()
+library(Taotao)
+Taotao::auto_format()
+library(Taotao)
+Taotao::auto_format()
+library(Taotao)
+Taotao::auto_format()
+Taotao::auto_format()
+install.packages("styler")
+getSourceEditorContext()
+library(Taotao)
+Taotao::auto_format()
+sessionInfo()
+toLatex(sessionInfo(), locale = FALSE)
+toLatex(iris, locale = FALSE)
+Sys.getlocale()
+Sys.setlocale(locale = "zh_CN.UTF-8")
+Sys.setlocale("LC_TIME", "zh_CN.UTF-8")
+Sys.setlocale("LC_TIME", "zh_CN.UTF-8")
+Sys.setlocale("LC_TIME", "UTF-8")
+Sys.setlocale(category='LC_ALL', locale='English_United States.1252')
+library(Taotao)
+Taotao::auto_format()
+你好
+Sys.getlocale()
+library(rstudioapi)
+library(formatR)
+# 01 Packages Install and Load -----------------------------------------------
+#' install and load packages
+#'
+#' @param pkgs package lists
+#' @examples
+#' Packages.InstallandLoad(c('tidyverse','glue'))
+#' @export
+Packages.InstallandLoad <- function(pkg) {
+new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+if (length(new.pkg)) {
+install.packages(new.pkg, dependencies = TRUE)
+}
+invisible(sapply(pkg, library, character.only = TRUE))
+}
+# 02 auto_format --------------------------------------------------------------
+#' auto_format
+#' @examples
+#' Taotao::auto_format()
+#' @export
+auto_format <- function() {
+Packages.InstallandLoad("rstudioapi")
+fileparams <- getSourceEditorContext()
+filePath <- fileparams[["path"]]
+fileID <- fileparams[["id"]]
+formatR::tidy_file(filePath, blank = TRUE,encoding = "utf-8")
+documentSave(id = fileID)
+}
+library(Taotao)
+Taotao::auto_format()
+styler:::style_active_file()
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+styler:::style_active_file()
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+style_text(c("ab <- 3", "a  <-3"), strict = TRUE)
+styler::style_text(c("ab <- 3", "a  <-3"), strict = TRUE)
+styler::style_text(c("ab <- 3", "a  <-3"), strict = FALSE)
+styler::style_text(c("ab <- 3", "a  <-3"), strict = TRUE)
+library(styler)
+style_text("call( 1)", style = tidyverse_style, scope = "spaces")
+style_text("call( 1)", transformers = tidyverse_style(strict = TRUE))
+style_text(c("ab <- 3", "a  <-3"), transformers = tidyverse_style(strict = TRUE))
+tryCatch(1, finally = print("Hello"))
+tryCatch(stop(e), finally = print("Hello"))
+tryCatch(stop("fred"),  error = function(e) e, finally = print("Hello"))
+tryCatch(a,  error = function(e) e, finally = print("Hello"))
+tryCatch(aba,  error = function(e) e, finally = print("Hello"))
+tryCatch(1,  error = function(e) e, finally = print("Hello"))
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+library(Taotao)
+Taotao::auto_format()
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+formatR::tidy_file(filePath, blank = TRUE, encoding = "utf-8")
+fileparams <- getSourceEditorContext()
+filePath <- fileparams[["path"]]
+fileID <- fileparams[["id"]]
+filePath
+formatR::tidy_file(filePath, blank = TRUE, encoding = "utf-8")
+Packages.InstallandLoad(c("rstudioapi","styler"))
+fileparams <- getSourceEditorContext()
+filePath <- fileparams[["path"]]
+fileID <- fileparams[["id"]]
+tryCatch(
+formatR::tidy_file(filePath, blank = TRUE, encoding = "utf-8"),
+error = function(e) {
+styler::style_file(filePath, tidyverse_style(strict = TRUE))
+}
+)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+library(Taotao)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+library(Taotao)
+formatR::tidy_file(filePath, blank = TRUE, encoding = "utf-8")
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+library(Taotao)
+Taotao::auto_format()
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+Taotao::auto_format()
+library(Taotao)
+Taotao::auto_format()
+library(Taotao)
+Taotao::auto_format()
+library(Taotao)
+Taotao::auto_format()
+library(Taotao)
+Taotao::auto_format()
+tryCatch(Taotao::auto_format(),error=function(e)1)
+library(Taotao)
+Taotao::auto_format()
+tried <- try(formatR::tidy_file(filePath, blank = TRUE),silent = TRUE)
+Taotao::auto_format()
+Taotao::auto_format()
+library(Taotao)
+Taotao::auto_format()
+library(Taotao)
+Taotao::auto_format()
+Taotao::auto_format()
+library(Taotao)
+Taotao::auto_format()
+library(Taotao)
+Taotao::auto_format()
+Taotao::auto_format()
+fileparams <- getSourceEditorContext()
+filePath <- fileparams[["path"]]
+fileID <- fileparams[["id"]]
+styler::style_file(filePath)
+documentSave(id = fileID)
+try(tidy_file(filePath, blank = TRUE), silent = TRUE)
+try(tidy_file(filePath, blank = TRUE), silent = TRUE)
+options(encoding = "utf-8")
+try(tidy_file(filePath, blank = TRUE), silent = TRUE)
+tidy_file(filePath, blank = TRUE)
+filePath
+tidy_file(filePath, blank = TRUE)
+formatR::tidy_file(file =filePath)
+try(tidy_file(filePath, blank = TRUE), silent = TRUE)
+fileparams <- getSourceEditorContext()
+filePath <- fileparams[["path"]]
+fileID <- fileparams[["id"]]
+tidy_file(filePath, blank = TRUE)
+options(encoding = "utf8")
+tidy_file(filePath, blank = TRUE)
+options(encoding = "UTF-8")
+tidy_file(filePath, blank = TRUE)
+on.exit
+library(Taotao)
+Taotao::auto_format()
+Taotao::auto_format()
+Taotao::preview.tibble(iris)
+Taotao::preview.tibble(data_tibble = iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(data_tibble = iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(data_tibble = iris)
+ui <- fluidPage( # Application title
+titlePanel(glue("{title}数据集可视化")),
+h5("开发者：陈涛涛"),
+h5("开发日期：2018年9月21日"),
+helpText('本shiny小程序可实现tibble对象可视化，对于字符、数字等数据类型直接窗口中显示；
+对于data.frame、list或者嵌套tibble等复杂数据，可以通过双击窗口中"打开"按钮，用excel打开。'),
+uiOutput("tibble")
+)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(data_tibble = iris)
+data_tibble <- iris
+Packages.InstallandLoad(c(
+"tidyverse", "shiny",
+"DT", "glue", "excel.link", "stringi"
+))
+Taotao::Packages.InstallandLoad(c(
+"tidyverse", "shiny",
+"DT", "glue", "excel.link", "stringi"
+))
+title <- substitute(data_tibble)
+ui <- fluidPage( # Application title
+titlePanel(glue("{title}数据集可视化")),
+h5("开发者：陈涛涛"),
+h5("开发日期：2018年9月21日"),
+helpText('本shiny小程序可实现tibble对象可视化，对于字符、数字等数据类型直接窗口中显示；
+对于data.frame、list或者嵌套tibble等复杂数据，可以通过双击窗口中"打开"按钮，用excel打开。'),
+uiOutput("tibble")
+)
+ui
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(data_tibble = iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(data_tibble = iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(data_tibble = iris)
+title <- substitute(data_tibble)
+ui <- fluidPage( # Application title
+titlePanel(glue("{title}数据集可视化")),
+h5("开发者：陈涛涛"),
+h5("开发日期：2018年9月21日"),
+helpText('本shiny小程序可实现tibble对象可视化，对于字符、数字等数据类型直接窗口中显示；对于data.frame、list或者嵌套tibble等复杂数据，可以通过双击窗口中"打开"按钮，用excel打开。'),
+uiOutput("tibble")
+)
+ui
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(data_tibble = iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/data_analysis.R')
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/data_analysis.R')
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/script1.R')
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/data_analysis.R')
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/data_analysis.R')
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/script1.R')
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+Packages.InstallandLoad(c(
+"tidyverse", "shiny",
+"DT", "glue", "excel.link", "stringi"
+))
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+Packages.InstallandLoad(c(
+"tidyverse", "shiny",
+"DT", "glue", "excel.link", "stringi"
+))
+preview.csv(iris)
+preview.latex("$x^2=y$")
+preview.tibble(iris)
+options(encoding = "utf-8")
+preview.tibble(iris)
+sessionInfo()
+Sys.getenv()
+Sys.getlocale()
+ui <- fluidPage(
+titlePanel(glue("{title}数据集可视化")),
+h5("开发者：陈涛涛"),
+h5("开发日期：2018年9月21日"),
+helpText('本shiny小程序可实现tibble对象可视化，对于字符、数字等数据类型直接窗口中显示；对于data.frame、list或者嵌套tibble等复杂数据，可以通过双击窗口中"打开"按钮，用excel打开。'),
+uiOutput("tibble")
+)
+ui <- fluidPage(
+titlePanel(glue("{title}数据集可视化")),
+h5("开发者：陈涛涛"),
+h5("开发日期：2018年9月21日"),
+helpText('本shiny小程序可实现tibble对象可视化，对于字符、数字等数据类型直接窗口中显示；对于data.frame、list或者嵌套tibble等复杂数据，可以通过双击窗口中"打开"按钮，用excel打开。'),
+uiOutput("tibble")
+)
+title <- substitute(data_tibble)
+# Application title
+ui <- fluidPage(
+titlePanel(glue("{title}数据集可视化")),
+h5("开发者：陈涛涛"),
+h5("开发日期：2018年9月21日"),
+helpText('本shiny小程序可实现tibble对象可视化，对于字符、数字等数据类型直接窗口中显示；对于data.frame、list或者嵌套tibble等复杂数据，可以通过双击窗口中"打开"按钮，用excel打开。'),
+uiOutput("tibble")
+)
+ui
+source('~/.active-rstudio-document', encoding = 'UTF-8')
+source('~/.active-rstudio-document', encoding = 'UTF-8')
+source('~/.active-rstudio-document', encoding = 'UTF-8')
+source('~/.active-rstudio-document', encoding = 'UTF-8')
+source('~/.active-rstudio-document', encoding = 'UTF-8')
+source('~/.active-rstudio-document', encoding = 'utf8')
+source('~/.active-rstudio-document', encoding = 'gb2312')
+install.packages(c("callr", "cli", "coda", "commonmark", "data.table", "devtools", "digest", "doParallel", "dplyr", "evaluate", "expm", "fansi", "fitdistrplus", "future", "ggplot2", "globals", "greybox", "htmlwidgets", "jqr", "later", "leaflet", "lmomco", "maptools", "mapview", "Matrix", "mime", "nanotime", "nloptr", "pkgbuild", "pkgconfig", "pkgload", "pracma", "processx", "psych", "PythonInR", "R.utils", "R6", "raster", "Rcpp", "RcppArmadillo", "RcppCCTZ", "reprex", "rgdal", "rgeos", "rlang", "rmapshaper", "rstudioapi", "sensitivity", "sf", "shiny", "shinydashboard", "smooth", "soiltexture", "spData", "spdep", "stringi", "survival", "testthat", "tidyr", "tidyselect", "tinytex", "TTR", "units", "VineCopula", "webshot", "xfun", "XML", "xtable", "xts", "zoo"))
+preview.tibble <- function(data_tibble) {
+Packages.InstallandLoad(c(
+"tidyverse", "shiny",
+"DT", "glue", "excel.link", "stringi"
+))
+title <- substitute(data_tibble)
+# Application title
+ui <- fluidPage(
+titlePanel(glue("{title}数据集可视化")),
+h5("开发者：陈涛涛"),
+h5("开发日期：2018年9月21日"),
+library(Taotao)
+Taotao::auto_format()
+Taotao::preview.tibble(iris)
+styler:::style_active_file()
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(iris)
+preview.tibble(iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(iris)
+library(Taotao)
+library(Taotao)
+library(Taotao)
+library(Taotao)
+title <- substitute(data_tibble)
+# Application title
+ui <- fluidPage(
+titlePanel(glue("{title}数据集可视化")),
+h3('开发者：陈涛涛'),
+h3("开发日期：2018年9月21日"),
+helpText('本shiny小程序可实现tibble对象可视化，对于字符、数字等数据类型直接窗口中显示；对于data.frame、list或者嵌套tibble等复杂数据，可以通过双击窗口中"打开"按钮，用excel打开。'),
+uiOutput("tibble")
+)
+ui
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(iris)
+ui
+ui %>% str
+encoding = 'UTF-8'
+preview.tibble(iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(iris)
+ui %>% as.character()
+ui %>% as.character() %>% enc2native()
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(iris)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/install_and_load.R', encoding = 'UTF-8')
+preview.tibble(iris)
+Taotao::preview.latex("$y=x^2$")
+Taotao::preview.latex("$产量\\,(kg\\, ha^{-1})y=x^2$")
+Taotao::preview.tibble(iris)
+xx=tibble(a=iris,b=iris)
+library(tidyverse)
+xx=tibble(a=list(iris),b=list(iris))
+Taotao::preview.tibble(x)
+Taotao::preview.tibble(xx)
+xx=tibble(a=list(iris,iris3),b=list(iris,iris3))
+Taotao::preview.tibble(xx)
+xx=tibble(a=list(iris,iris),b=list(iris,iris))
+Taotao::preview.tibble(xx)
+xx=tibble(a=list(iris,iris,list(1,3)),b=list(iris,iris,list(2,1)))
+Taotao::preview.tibble(xx)
+xx
+Taotao::Packages.InstallandLoad("plyr")
+remove.packages("agricolae", lib="~/R/win-library/3.5")
+Taotao::Packages.InstallandLoad("agricolae")
+library(Taotao)
+source('D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/R/convert.R')
+library(Taotao)
+library(Taotao)
+Taotao::citenow()
+install.packages("rbbt")
+install.packages("rbbt")
+BiocManager::install('rbbt')
+install.packages("rbbt")
+devtools::install_github("paleolimbot/rbbt")
+library(Taotao)
+library(Taotao)
+citenow <- function() {
+pkg <- c("rbbt","stringr","glue")
+new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+if(length(new.pkg) > 0) stop(paste("缺少package",new.pkg,"! 请安装工具包"))
+refr <- rbbt::bbt_bib_zotero(.action = rbbt::bbt_return)
+refr2 <- stringr::str_split(refr, "\\n\\n")[[1]]
+refr2 <- setdiff(refr2, "\n")
+key <- stringr::str_extract(refr2, "(?<=\\{)[^,]+")
+keystring <- paste0(glue::glue("@{key}"), collapse = ";")
+context <- rstudioapi::getActiveDocumentContext()
+rstudioapi::modifyRange(context$selection[[1]]$range,keystring,context$id)
+}
+citenow()
+library(Taotao)
+Taotao:::citenow()
+Taotao:::citenow()
+Taotao:::citenow()
+Taotao:::citenow()
+xfun::sans_ext("adsfa.pdf")
+xfun::is_windows()
+Taotao:::citenow()
+Taotao:::citenow()
+Taotao:::citenow()
+Taotao:::citenow()
+library(Taotao)
+library(Taotao)
+Taotao::preview.csv
+library(Taotao)

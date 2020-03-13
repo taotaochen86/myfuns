@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1584108492538.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1596064584",
+    "id" : "1115228D",
+    "lastKnownWriteTime" : 1584108524,
+    "last_content_update" : 1584108524455,
+    "path" : "D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/myfuns/R/preview.R",
+    "project_path" : "R/preview.R",
+    "properties" : {
+        "cursorPosition" : "0,25",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
