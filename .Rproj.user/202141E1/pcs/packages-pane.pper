@@ -1,0 +1,7 @@
+{
+    "installOptions": {
+        "installFromRepository": true,
+        "libraryPath": "C:/ProgramData/Anaconda3/Lib/site-packages/rpy2/R/win-library/4.0",
+        "installDependencies": true
+    }
+}

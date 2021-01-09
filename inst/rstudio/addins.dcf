@@ -7,3 +7,9 @@ Name: citenow
 Description: cite a reference for zotero.
 Binding: citenow
 Interactive: true
+
+Name: previewChapter
+Description: preview a Bookdown Chapter
+Binding: Rstudio.previewChapter
+Interactive: true
+

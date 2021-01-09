@@ -12,15 +12,13 @@ export(preview.ggplot)
 export(preview.latex)
 export(preview.tibble)
 export(preview.tmap)
+export(citenow)
 export(file.toPinyin)
 export(folder.toPinyin)
 export(convert.Datetime.excel2R)
 export(Rstudio.chrome)
 export(preview.ggplot.emf)
 export(preview.ggplot.pdf)
-export(getTEMPFile)
-export(preview.MathExpressions)
-export(preview.word_table)
-export(Rstudio.previewChapter)
+
 
 

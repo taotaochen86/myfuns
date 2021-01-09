@@ -1,7 +1,7 @@
 Package: Taotao
 Type: Package
 Title: R toolkit
-Version: 1.3.0
+Version: 0.4.1
 Author: person("Taotao","Chen",email="taotao-chen@syau.edu.cn",role="Author")
 Maintainer: The package maintainer <taotao-chen@syau.edu.cn>
 Description: More about what it does (maybe more than one line)

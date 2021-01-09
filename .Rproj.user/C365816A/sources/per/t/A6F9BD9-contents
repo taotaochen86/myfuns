@@ -22,7 +22,7 @@ preview.csv <- function(ds, sheetName = NULL, xl = FALSE, fileEncoding = "gb2312
     xl.sheet.activate(sheetName)
     xlc$a1 <- excel.link:::fix_encoding(ds)
   } else {
-    tmpfile <- getTEMPFile(fileext = ".csv")
+    tmpfile <- tempfile(fileext = ".csv")
     write.csv(x = ds, file = tmpfile,fileEncoding = fileEncoding)
     shell.exec(tmpfile)
   }
@@ -121,7 +121,7 @@ preview.tibble <- function(data_tibble) {
 #'
 preview.ggplot <- function(G, width = 17.5, height = 20, dpi = 600) {
   Packages.InstallandLoad(c("ggplot2","cowplot"))
-  tmpfile <- getTEMPFile(fileext = ".tiff")
+  tmpfile <- tempfile(fileext = ".tiff")
   ggsave(
     plot = G, filename = tmpfile, units = "cm", width = width,
     height = height, dpi = dpi, compression = "lzw"
@@ -137,7 +137,7 @@ preview.ggplot <- function(G, width = 17.5, height = 20, dpi = 600) {
 #' @export
 preview.tmap <- function(..., ncol = 1, nrow = 1, width = 10, height = 7, res = 600) {
   require(tmap)
-  file <- getTEMPFile(fileext = ".tiff")
+  file <- tempfile(fileext = ".tiff")
   tiff(
     filename = file,
     width = width,
@@ -193,7 +193,7 @@ preview.latex <- function(tex.strings = "$y=x^2+x \\times y$") {
 
 preview.ggplot.emf <- function(Gs,width,height){
   Packages.InstallandLoad(c("ggplot2","cowplot","devEMF"))
-  tmpfile <- getTEMPFile(fileext = ".emf")
+  tmpfile <- tempfile(fileext = ".emf")
   ggsave(
     plot = Gs, filename = tmpfile, units = "cm", width = width,
     height = height, device = emf
@@ -216,7 +216,7 @@ preview.ggplot.emf <- function(Gs,width,height){
 
 preview.ggplot.pdf <- function(Gs,width=10,height=10){
   Packages.InstallandLoad(c("ggplot2","cowplot"))
-  tmpfile <- getTEMPFile(fileext = ".pdf")
+  tmpfile <- tempfile(fileext = ".pdf")
   ggsave(plot = Gs, filename = tmpfile, units = "cm", useDingbats = FALSE,
          width = width, height = height)
   shell.exec(tmpfile)
@@ -224,46 +224,5 @@ preview.ggplot.pdf <- function(Gs,width=10,height=10){
 }
 
 
-# 06 quickly preview Mathematical Expression
-#' quickly preview Mathematical Expression
-#'
-#' @param exp  expression
-#' @examples
-#' expr1 = expression(c^2 == a[1]^2 + b[1]^2)
-#' preview.MathExpressions(expr1)
-#' @export
-
-preview.MathExpressions <- function(expr1,...){
-  plot(1, 1, type = "n", xlim = c(-1, 1), ylim = c(0.5, 4.5), xaxt = "n", yaxt = "n",
-       ann = FALSE)
-  text(0, seq_along(c(expr1,...)), labels = c(expr1,...), cex = 1)
-  title(main = "Quickly Preview Mathematical Expression", cex.main = 1.2)
-}
 
 
-
-
-
-
-
-# 06 preview Word Table
-
-#' preview Word Table
-#'
-#' @param df a dataframe
-#' @examples
-#'
-#' preview.word_table(iris)
-#'  @export
-#'
-
-preview.word_table <- function(df){
-  Packages.InstallandLoad(c("officer","flextable",'tidyverse'))
-  set_flextable_defaults(font.size = 8, font.family = "Times New Roman",table.layout = "autofit",text.align = "center")
-  wordTable <- df %>% flextable()
-  wordfile <- tempfile(fileext = ".docx")
-  read_docx() %>%
-    body_add_flextable(wordTable) %>%
-    print(target = wordfile)
-  shell.exec(file = wordfile)
-}

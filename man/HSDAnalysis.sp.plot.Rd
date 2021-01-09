@@ -4,16 +4,16 @@
 \alias{HSDAnalysis.sp.plot}
 \title{ANOVA for split plot experiment and it's HSD test#'}
 \usage{
-HSDAnalysis.sp.plot(DS, block, pplot, splot)
+HSDAnalysis.sp.plot(mplot, splot, block, y)
 }
 \arguments{
-\item{DS}{data.frame dataset}
+\item{mplot}{vector of the main factor}
 
-\item{block}{a string block factor Name}
+\item{splot}{vector of the split factor}
 
-\item{pplot}{a string main factor factor Name}
+\item{block}{vector of block factor}
 
-\item{splot}{a string split factor factor Name}
+\item{y}{vector of a response variable}
 }
 \description{
 ANOVA for split plot experiment and it's HSD test#'
