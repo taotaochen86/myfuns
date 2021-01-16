@@ -43,3 +43,9 @@ folder.toPinyin <- function(dir) {
                 dic = "pinyin2")
   pinyin::file.rename2py(dir, mypy)
 }
+
+
+
+
+
+

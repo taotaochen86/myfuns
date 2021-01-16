@@ -56,3 +56,6 @@ convert.pdf2jpg <- function(filefFrom, pages = NULL, dirSaved = NULL, dpi = 300)
 convert.Datetime.excel2R <- function(x){
   as.Date(x, origin = "1899-12-30")
 }
+
+
+

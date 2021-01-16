@@ -27,3 +27,30 @@ Rstudio.previewChapter <- function(){
   shell.exec(xx)
 
 }
+
+
+#' subscript
+#' @export
+#'
+
+Rstudio.subscript <- function() {
+  id <- rstudioapi::documentId(allowConsole = TRUE)
+  selection <- rstudioapi::selectionGet(id = id)
+  text <- sprintf("~%s~",selection$value)
+  rstudioapi::selectionSet(value = text, id = id)
+
+}
+
+#' subscript
+#' @export
+#'
+
+Rstudio.supscript <- function() {
+  id <- rstudioapi::documentId(allowConsole = TRUE)
+  selection <- rstudioapi::selectionGet(id = id)
+  text <- sprintf("^%s^",selection$value)
+  rstudioapi::selectionSet(value = text, id = id)
+}
+
+
+

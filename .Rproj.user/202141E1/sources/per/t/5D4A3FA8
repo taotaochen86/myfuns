@@ -3,7 +3,7 @@
     "path": "D:/OneDrive - syau.edu.cn/01R Codes/TaotaoAddin1/myfuns/R/Rstudio.R",
     "project_path": "R/Rstudio.R",
     "type": "r_source",
-    "hash": "342208451",
+    "hash": "1442294447",
     "contents": "",
     "dirty": false,
     "created": 1607236162150.0,
@@ -12,15 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "21,31",
-        "scrollLine": "11"
+        "cursorPosition": "56,0",
+        "scrollLine": "36",
+        "docOutlineVisible": "1"
     },
     "folds": "",
-    "lastKnownWriteTime": 1609824149,
+    "lastKnownWriteTime": 1610623094,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1609824149571,
+    "last_content_update": 1610623094544,
     "read_only": false,
     "read_only_alternatives": []
 }
